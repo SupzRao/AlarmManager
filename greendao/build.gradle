@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin:'application'
+
+group = 'com.alarmmanager'
+archivesBaseName = 'com.alarmmanager'
+version = '1.0'
+sourceCompatibility = "1.7"
+mainClassName = "com.alarmManagerDao.MainClass"
+
+dependencies {
+    compile 'org.greenrobot:greendao-generator:3.2.0'
+}
+
+sourceSets {
+    main {
+        java {
+            //srcDir 'src'
+            //srcDir 'src-gen'
+        }
+    }
+}
+
+artifacts {
+    archives jar
+}
