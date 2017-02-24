@@ -1,6 +1,7 @@
 package com.alarmmanager.BasePackage;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
@@ -14,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.alarmmanager.MainActivity;
 import com.alarmmanager.R;
 
 import java.util.HashMap;
@@ -22,6 +24,8 @@ import nucleus.factory.RequiresPresenter;
 import nucleus.presenter.Presenter;
 import nucleus.view.NucleusAppCompatActivity;
 import timber.log.Timber;
+
+import static com.alarmmanager.BasePackage.MyApplication.createBackStack;
 
 @RequiresPresenter(BaseDrawerPresenter.class)
 public class BaseDrawerActivity<PresenterType extends Presenter> extends NucleusAppCompatActivity<PresenterType>
@@ -37,9 +41,11 @@ public class BaseDrawerActivity<PresenterType extends Presenter> extends Nucleus
     TextView tv_user_email;
     LinearLayout llNavHeader;
     HashMap<String, String> hashMapUserDetails;
+
     protected boolean useToolbar() {
         return true;
     }
+
     public SessionManager sessionManager;
 
 
@@ -127,8 +133,6 @@ public class BaseDrawerActivity<PresenterType extends Presenter> extends Nucleus
     }
 
     private void setupNavDrawer() {
-
-
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (mDrawerLayout == null) {
             Timber.d("No drawer");
@@ -155,36 +159,24 @@ public class BaseDrawerActivity<PresenterType extends Presenter> extends Nucleus
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        switch (id) {
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-//            Timber.d("Nav: Trip history select");
-//            createBackStack(new Intent(this, MainActivity.class), this);
-//
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        }/* else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }*/
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        closeNavDrawer();
-        overridePendingTransition(R.anim.enter_from_left, R.anim.exit_out_left);
-
-        return true;
-    }
+            case R.id.nav_camera:
+                createBackStack(new Intent(this, MainActivity.class), this);
+                break;
+            case R.id.nav_gallery:
+                break;
+        }
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            drawer.closeDrawer(GravityCompat.START);
+            closeNavDrawer();
+            overridePendingTransition(R.anim.enter_from_left, R.anim.exit_out_left);
+            return true;
+        }
 
     protected boolean isNavDrawerOpen() {
         return mDrawerLayout != null && mDrawerLayout.isDrawerOpen(GravityCompat.START);
     }
-
 
 
     @Override

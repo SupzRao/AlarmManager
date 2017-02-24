@@ -3,15 +3,6 @@
 
     <item
         is-multidex="false"
-        jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\pl.droidsonroids.gif\android-gif-drawable\1.1.17\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7f8c6fd043a9c060badf3fa9b77e51c422af0a8b">
-        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\pl.droidsonroids.gif-android-gif-drawable-1.1.17_3fc0b30a2d5f010398c5fe9b22336446b43ff63b.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\info.android15.nucleus\nucleus-support-v4\2.0.5\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -27,6 +18,204 @@
         revision="25.0.2"
         sha1="898f9ab61e2a23afd615f0b0389478bec86f49f9">
         <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\rxjava-1.0.14_cfc3f5de4d2738f951d1cd41cb0eedfa39ce18f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.0_3624ab779bb32725af51484f0f4a5818c1963119.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.1.0_cd9534925c29bfe09440baddece4228dd9a7d395.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Suprada\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\butterknife-annotations-8.4.0_a4a83c08837d062b9fd0b96dbbf8e8f33ee147eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\info.android15.nucleus\nucleus-support-v7\2.0.5\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="33915803a50b40117099d9a9225511dc408cba4a">
+        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\info.android15.nucleus-nucleus-support-v7-2.0.5_79b0b623642dcc976d0a6f9d14c80a7975d60050.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.0_5b5ed820d00d09360e29ce2b43fec77d80b0caef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\sample\Android\AlarmManager\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25e1307f025a6af7f24eb278aef103f11c7e2c56">
+        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_b0b27c01a853ce328b12aee2c8ee28a2d7bf15d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.0_c4cfbe607eae0f9326125a724c5e422865abaabc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.1.0_5fbbf76a25a81b4a4e8ae78470fb7538d889b8ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Suprada\.gradle\caches\modules-2\files-2.1\com.jakewharton.timber\timber\2.4.2\1f875e143b83cf04899dd6db12765fe9ba483656\timber-2.4.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1f875e143b83cf04899dd6db12765fe9ba483656">
+        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\timber-2.4.2_fdc08e4cdb65cc4dcc9a6f23b1e71e4150c1e2c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\pl.droidsonroids.gif\android-gif-drawable\1.1.17\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7f8c6fd043a9c060badf3fa9b77e51c422af0a8b">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\pl.droidsonroids.gif-android-gif-drawable-1.1.17_2de0f9224f1ea878390fc008f1029c3269dd97f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.0_d8a133b2accc8b86e07b735449ec28c5d316e5ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_4f2c77fb81658e10427e5f239c3a720a19a46a03.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
+        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.1.0_2b7874755f6b9ae0d073c02f3457819a6883738f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.1.0_8bfa0288038297d0af72177381748ba1b4a00d49.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.0_3262daa0bba7b7f4395527805744ee1f6f831f9b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_2b0cc1b11133c85dc160463ebc3d4c19c91f9dbd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\info.android15.nucleus\nucleus-support-v4\2.0.5\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02faccb79fd2e11fcce9cd62f78b20ef9915aa3b">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\info.android15.nucleus-nucleus-support-v4-2.0.5_6e2f16a8a5ee94ba8c01260edfba20d6217c6475.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.0_75efb24923da7716dcb532020de92db2c05a127f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\pl.droidsonroids.gif\android-gif-drawable\1.1.17\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7f8c6fd043a9c060badf3fa9b77e51c422af0a8b">
+        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\pl.droidsonroids.gif-android-gif-drawable-1.1.17_3fc0b30a2d5f010398c5fe9b22336446b43ff63b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.0_0c57b87d21c69bb8073343907241b52fe50c3e61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.1.0_618490f0ffb89461672b1e03513c5bec64e57dec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\info.android15.nucleus\nucleus-support-v7\2.0.5\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="33915803a50b40117099d9a9225511dc408cba4a">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\info.android15.nucleus-nucleus-support-v7-2.0.5_8de7dc5ebea6fc735e46a6822a1e536b3d38a3eb.jar" />
     </item>
     <item
         is-multidex="false"
@@ -57,21 +246,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.0_d9456ad4fff8672d8ecfa47add03e239541333f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9756e25482f37bc833d0f73d8e840af14ee9fd07">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_01ea7f25b73ce9af9b1b44d1ce639bce8e142aef.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
         <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.0_d8fe41cc4babf71bf26e3fa2ece41315279700a8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Suprada\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife-annotations\8.4.0\ea392375cf9ff59234a82e7928a204215ccc98cd\butterknife-annotations-8.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
-        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\butterknife-annotations-8.4.0_a4a83c08837d062b9fd0b96dbbf8e8f33ee147eb.jar" />
     </item>
     <item
         is-multidex="false"
@@ -93,39 +291,39 @@
     </item>
     <item
         is-multidex="false"
-        jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\info.android15.nucleus\nucleus-support-v7\2.0.5\jars\classes.jar"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="33915803a50b40117099d9a9225511dc408cba4a">
-        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\info.android15.nucleus-nucleus-support-v7-2.0.5_79b0b623642dcc976d0a6f9d14c80a7975d60050.jar" />
+        sha1="3eeff4aea0fc49cbd6c33fe96e869071d16f35ce">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\instant-run_0abffa05397ce3308490ce6509a140e979160b87.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="S:\sample\Android\AlarmManager\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="25e1307f025a6af7f24eb278aef103f11c7e2c56">
-        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_b0b27c01a853ce328b12aee2c8ee28a2d7bf15d5.jar" />
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.0_de015e883e3327329334a1f92e11fa171da417ef.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.0_c4cfbe607eae0f9326125a724c5e422865abaabc.jar" />
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.1.0_d28841376c313f34ff5e8a21097d6954994fb9fe.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Suprada\.gradle\caches\modules-2\files-2.1\com.jakewharton.timber\timber\2.4.2\1f875e143b83cf04899dd6db12765fe9ba483656\timber-2.4.2.jar"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="1f875e143b83cf04899dd6db12765fe9ba483656">
-        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\timber-2.4.2_fdc08e4cdb65cc4dcc9a6f23b1e71e4150c1e2c0.jar" />
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.0_2efb7e914f3202b8d9ba23847285a81714c937de.jar" />
     </item>
     <item
         is-multidex="false"
@@ -135,15 +333,6 @@
         revision="25.0.2"
         sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
         <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.0_ab0ba3d17234cb41c12e6018174b16f5e696cc42.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_4f2c77fb81658e10427e5f239c3a720a19a46a03.jar" />
     </item>
     <item
         is-multidex="false"
@@ -192,24 +381,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7f2420506110902f033406b25697cf97ee8c38b2">
-        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.1.0_2b7874755f6b9ae0d073c02f3457819a6883738f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.1.0_8bfa0288038297d0af72177381748ba1b4a00d49.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -219,12 +390,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="S:\sample\Android\AlarmManager\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jar="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="S:\sample\Android\AlarmManager\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.0_3262daa0bba7b7f4395527805744ee1f6f831f9b.jar" />
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="S:\MyProjects\Carbook_Workspace\21_feb_CBP\AlarmManager\app\build\intermediates\pre-dexed\debug\com.jakewharton-butterknife-8.4.0_4f6c40ee262dcd9758b156a3338bc554f78557ae.jar" />
     </item>
     <item
         is-multidex="false"
