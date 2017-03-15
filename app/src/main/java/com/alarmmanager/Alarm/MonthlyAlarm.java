@@ -1,14 +1,19 @@
 package com.alarmmanager.Alarm;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.alarmmanager.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,7 +32,8 @@ public class MonthlyAlarm extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    @BindView(R.id.fab_add_alarm)
+    FloatingActionButton fab_add_alarm;
     private OnFragmentInteractionListener mListener;
 
     public MonthlyAlarm() {
@@ -65,7 +71,18 @@ public class MonthlyAlarm extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_monthly_alarm, container, false);
+        View view;
+        view = inflater.inflate(R.layout.fragment_monthly_alarm, container, false);
+        ButterKnife.bind(this, view);
+        fab_add_alarm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), AddAlarmActivity.class);
+                intent.putExtra("key", 2);
+                startActivity(intent);
+            }
+        });
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

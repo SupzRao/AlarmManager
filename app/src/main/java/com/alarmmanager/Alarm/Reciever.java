@@ -28,6 +28,8 @@ import static com.alarmmanager.BasePackage.BaseFunction.showTime;
 public class Reciever extends BroadcastReceiver {
     List<Alarm> alarmlists;
     private String cur_time = "";
+    private PendingIntent piStop;
+    private PendingIntent piAbort;
 
 
     @Override
@@ -51,22 +53,30 @@ public class Reciever extends BroadcastReceiver {
 
     private void setNotification(Context context, NotificationCompat.Builder nb) {
         int requestID = (int) System.currentTimeMillis();
-        Intent intent = new Intent(context, AlarmActionActivity.class);
+       /* Intent intent = new Intent(context, AlarmActionActivity.class);
         intent.setAction("myString" + requestID);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        PendingIntent pIntent = PendingIntent.getActivity(context, requestID, intent, 0);
+        PendingIntent pIntent = PendingIntent.getActivity(context, requestID, intent, 0);*/
         Uri soundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        // Vibrator v = (Vibrator)
-        // this.context.getSystemService(Context.VIBRATOR_SERVICE);
+        Uri alarmUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+        if (alarmUri == null) {
+            alarmUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        }
+        piStop = PendingIntent.getActivity(context, 1, new Intent(context,
+                NonRepeatAlarm.class), 0);
+        piAbort = PendingIntent.getActivity(context, 1, new Intent(context,
+                NonRepeatAlarm.class), 0);
+       /* Ringtone ringtone = RingtoneManager.getRingtone(context, alarmUri);
+        ringtone.play();*/
         Notification notification = new NotificationCompat.Builder(context)
                 .setSmallIcon(R.drawable.ic_notification_small)
                 .setContentTitle("Alarm Manager")
                 .setContentText("Message")
                 .setAutoCancel(true)
-                .setSound(soundUri)
+                .setSound(alarmUri)
                 .setStyle(new NotificationCompat.BigTextStyle().bigText("Message"))
-                .setContentIntent(pIntent)
-                .build();
+                .addAction(R.drawable.ic_stop_gray_png, "Stop", piStop)
+                .addAction(R.drawable.ic_close_gray_png, "Snooze", piAbort).build();
         // Put the auto cancel notification flag
         notification.flags |= Notification.FLAG_AUTO_CANCEL;
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);

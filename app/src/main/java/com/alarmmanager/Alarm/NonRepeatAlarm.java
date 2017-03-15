@@ -3,6 +3,8 @@ package com.alarmmanager.Alarm;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -53,6 +55,7 @@ public class NonRepeatAlarm extends BaseFragment<NonRepeatAlarmListPresenter> {
     FloatingActionButton fab_add;
     private List<Alarm> list_alarm;
     Reciever reciever;
+    private Ringtone ringtone;
 
     public NonRepeatAlarm() {
         // Required empty public constructor
@@ -98,11 +101,21 @@ public class NonRepeatAlarm extends BaseFragment<NonRepeatAlarmListPresenter> {
         list_alarm = getPresenter().getAlarmDataFromDb();
         setDataToAdapter();
 
+        Uri alarmUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM);
+        if (alarmUri == null) {
+            alarmUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        }
+        ringtone = RingtoneManager.getRingtone(getActivity().getApplicationContext(), alarmUri);
+        if(ringtone.isPlaying())
+        {
+            ringtone.stop();
+        }
         fab_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent addfuelstation = new Intent(getContext(), AddAlarmActivity.class);
-                startActivity(addfuelstation);
+                Intent intent = new Intent(getContext(), AddAlarmActivity.class);
+                intent.putExtra("key",0);
+                startActivity(intent);
             }
         });
         // Inflate the layout for this fragment

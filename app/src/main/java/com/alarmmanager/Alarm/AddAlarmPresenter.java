@@ -34,12 +34,17 @@ public class AddAlarmPresenter extends BasePresenter<AddAlarmActivity> {
         addAlarmActivity = view;
     }
 
-    public void addAlarmDataIntoDb(Alarm alarm) {
+    public void addAlarmDataIntoDb(Alarm alarm, int key_type) {
         AlarmDao alarmDao = MyApplication.getDatabaseManager().GetSession().getAlarmDao();
         /* inset into sqlite db*/
         alarmDao.insert(alarm);
         Toast.makeText(addAlarmActivity, "Saved Successfully ", Toast.LENGTH_SHORT).show();
-        Intent gobacktolist = new Intent(addAlarmActivity, MainActivity.class);
-        addAlarmActivity.startActivity(gobacktolist);
+        if (key_type == 0) {
+            Intent gobacktolist = new Intent(addAlarmActivity, MainActivity.class);
+            addAlarmActivity.startActivity(gobacktolist);
+        }else
+        {
+
+        }
     }
 }

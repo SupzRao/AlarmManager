@@ -5,11 +5,14 @@ import android.content.Intent;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.provider.CalendarContract;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.DatePicker;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -41,6 +44,13 @@ public class AddAlarmActivity extends BaseActivity<AddAlarmPresenter> {
     TimePicker timepicker;
     String AMPM;
     Calendar calendar;
+    int key_type;
+    @BindView(R.id.ll_weekdays)
+    LinearLayout ll_weekdays;
+    @BindView(R.id.tv_repeat_days)
+    TextView tv_repeat_days;
+    @BindView(R.id.datepicker)
+    DatePicker datepicker;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -59,6 +69,20 @@ public class AddAlarmActivity extends BaseActivity<AddAlarmPresenter> {
                 AddAlarmActivity.this.onBackPressed();
             }
         });
+        key_type = getIntent().getExtras().getInt("key", 0);
+        if (key_type == 0) {
+            ll_weekdays.setVisibility(View.GONE);
+            tv_repeat_days.setVisibility(View.GONE);
+            datepicker.setVisibility(View.GONE);
+        } else if (key_type == 1) {
+            ll_weekdays.setVisibility(View.VISIBLE);
+            tv_repeat_days.setVisibility(View.VISIBLE);
+            datepicker.setVisibility(View.GONE);
+        } else if (key_type == 2) {
+            ll_weekdays.setVisibility(View.GONE);
+            tv_repeat_days.setVisibility(View.GONE);
+            datepicker.setVisibility(View.VISIBLE);
+        }
         defaultRintoneUri = RingtoneManager.getActualDefaultRingtoneUri(getApplicationContext(), RingtoneManager.TYPE_RINGTONE);
         defaultRingtone = RingtoneManager.getRingtone(this, defaultRintoneUri);
         tv_set_alarm_tone.setText("" + defaultRingtone.getTitle(this));
@@ -73,6 +97,28 @@ public class AddAlarmActivity extends BaseActivity<AddAlarmPresenter> {
             }
         });
         calendar = Calendar.getInstance();
+        if (Build.VERSION.SDK_INT >= 14) {
+            Intent intent = new Intent(Intent.ACTION_INSERT)
+                    .setData(CalendarContract.Events.CONTENT_URI)
+                    .putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, calendar.getTimeInMillis())
+                    .putExtra(CalendarContract.EXTRA_EVENT_END_TIME, calendar.getTimeInMillis())
+                    .putExtra(CalendarContract.Events.TITLE, "Yoga")
+                    .putExtra(CalendarContract.Events.DESCRIPTION, "Group class")
+                    .putExtra(CalendarContract.Events.EVENT_LOCATION, "The gym")
+                    .putExtra(CalendarContract.Events.AVAILABILITY, CalendarContract.Events.AVAILABILITY_BUSY)
+                    .putExtra(Intent.EXTRA_EMAIL, "rowan@example.com,trevor@example.com");
+            startActivity(intent);
+        } else {
+            Calendar cal = Calendar.getInstance();
+            Intent intent = new Intent(Intent.ACTION_EDIT);
+            intent.setType("vnd.android.cursor.item/event");
+            intent.putExtra("beginTime", cal.getTimeInMillis());
+            intent.putExtra("allDay", true);
+            intent.putExtra("rrule", "FREQ=YEARLY");
+            intent.putExtra("endTime", cal.getTimeInMillis() + 60 * 60 * 1000);
+            intent.putExtra("title", "A Test Event from android app");
+            startActivity(intent);
+        }
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
         int min = calendar.get(Calendar.MINUTE);
         tv_display_time.setText(showTime(hour, min));
@@ -82,8 +128,14 @@ public class AddAlarmActivity extends BaseActivity<AddAlarmPresenter> {
                 tv_display_time.setText(showTime(hourOfDay, minute));
             }
         });
-    }
+        datepicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tv_display_time.setText(datepicker.getDayOfMonth());
+            }
+        });
 
+    }
 
 
     @Override
@@ -118,7 +170,13 @@ public class AddAlarmActivity extends BaseActivity<AddAlarmPresenter> {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             Alarm alarm = insert_AlarmData();
-            getPresenter().addAlarmDataIntoDb(alarm);
+            if (key_type == 0) {
+                getPresenter().addAlarmDataIntoDb(alarm, key_type);
+            } else if (key_type == 1) {
+                getPresenter().addAlarmDataIntoDb(alarm, key_type);
+            } else if (key_type == 2) {
+                getPresenter().addAlarmDataIntoDb(alarm, key_type);
+            }
 
         }
         return true;
