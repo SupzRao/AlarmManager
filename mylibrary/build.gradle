@@ -1,4 +1,27 @@
 apply plugin: 'com.android.library'
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'Android-Library'
+
+    publishedGroupId = 'com.mylibrary'
+    libraryName = 'Mylittlelibrary'
+    artifact = 'Mylittlelibrary'
+
+    libraryDescription = 'A Little library on Android'
+
+    siteUrl = 'https://github.com/SupzRao/AlarmManager/tree/master/mylibrary'
+    gitUrl = 'https://github.com/SupzRao/AlarmManager/tree/master/mylibrary'
+
+    libraryVersion = '0.0.1'
+
+    developerId = 'suprada'
+    developerName = 'Suprada'
+    developerEmail = 'supradarao@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion 25
@@ -29,3 +52,4 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.2.0'
     testCompile 'junit:junit:4.12'
 }
+apply from: 'https://github.com/SupzRao/AlarmManager/blob/master/mylibrary/build.gradle'
