@@ -23,6 +23,6 @@ public class LibMainActivity extends RelativeLayout {
     public void init(Context context) {
         View rootView = inflate(context, R.layout.activity_lib_main, this);
         content = (TextView) rootView.findViewById(R.id.content);
-
     }
+
 }
